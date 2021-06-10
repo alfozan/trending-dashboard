@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ar">
+
+<head>
+    <title>Trending in Saudi 🇸🇦</title>
+    <meta charset="UTF-8">
+    <!-- disable cache -->
+    <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate"/>
+
+
+    <meta http-equiv="Pragma" content="no-cache"/>
+    <meta http-equiv="Expires" content="0"/>
+    <!-- instruct browser to reload page every hour -->
+    <meta http-equiv="refresh" content="3600"/>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <style>
+        html {
+            height: 100%;
+            background-color: black;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            border: 0;
+            width: 100%;
+            height: 100%;
+            /*height: 97%;*/
+        }
+
+        iframe {
+            width: 100%;
+            border: none;
+        }
+
+        div {
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+        /* responsive views */
+        #div-desktop {
+            display: none;
+        }
+
+        @media screen and (min-width: 900px) {
+            #div-mobile {
+                display: none;
+            }
+
+            #div-desktop {
+                display: block;
+            }
+        }
+    </style>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5DDBGVZLMY"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+
+        gtag('js', new Date());
+
+        gtag('config', 'G-5DDBGVZLMY');
+    </script>
+</head>
+
+<body>
+<div id="div-desktop">
+    <iframe src="https://trends.google.com/trends/hottrends/visualize?nrow=2&ncol=3&pn=p36" style="height:70%;" title="Google Trending Saudi Arabia"></iframe>
+    <iframe src="https://trending.alfozan.io/twitter-trends/index.html?ncols=3" style="height:30%;" title="Twitter Trending Saudi Arabia"></iframe>
+</div>
+<div id="div-mobile">
+    <iframe src="https://trends.google.com/trends/hottrends/visualize?nrow=2&ncol=2&pn=p36" style="height:60%;" title="Google Trending Saudi Arabia"></iframe>
+    <iframe src="https://trending.alfozan.io/twitter-trends/index.html?ncols=3" style="height:40%;" title="Twitter Trending Saudi Arabia"></iframe>
+</div>
+</body>
+
+</html>
