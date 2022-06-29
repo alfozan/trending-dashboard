@@ -1,3 +1,1 @@
-# trending-dashboard
-
-https://trending.alfozan.io/
+# https://trending.alfozan.io trending topics dashboard
