@@ -50,10 +50,6 @@ async function getTrends() {
     const res = await fetch(TWITTER_TRENDING_API_ENDPOINT);
     trends = await res.json();
 
-    // TODO: temp hack
-    trends = trends.filter(item => item.name !== "#omar_forever");
-    // trends = trends.filter(item => !item.name.includes("omar"));
-
     // sort based on tweet_volume
     trends.sort((a, b) => (a.tweet_volume > b.tweet_volume) ? -1 : 1);
     // get top N trends only
@@ -62,8 +58,8 @@ async function getTrends() {
 }
 
 function _updateTrends() {
-    console.log("_updateTrends");
-    console.log(trends);
+    // console.log("_updateTrends");
+    // console.log(trends);
     for (let trend of trends) {
         trend.name = trend.name.replaceAll('#', '');
         trend.name = trend.name.replaceAll('_', ' ');
