@@ -109,7 +109,7 @@ function draw() {
 // ---------------------- Main ----------------------
 // constants
 const TWITTER_TRENDING_API_ENDPOINT = "https://trending-api.alfozan.io/trends";
-const TWITTER_TRENDING_API_TOKEN = "zrDYwGSRYBsUMPr2wiM68QTNcdyXnbDMHzYoiy5Z9PH7N";
+const TWITTER_TRENDING_API_TOKEN = "";
 
 const TREND_SHUFFLE_INTERVAL_SECONDS = 6
 const TRENDS_FETCH_INTERVAL_SECONDS = 3 * 60 // 3 min
